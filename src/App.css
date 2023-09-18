@@ -1,0 +1,26 @@
+.appWrapper {
+  background-color: white;
+  padding: 32px;
+  padding-bottom: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.navBar {
+  border-bottom: solid 1.5px #D9D9D9;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rowDisplay {
+  display: flex;
+  flex-direction: row;
+}
+
+.userNavbar {
+  flex: 1;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+}

@@ -1,0 +1,19 @@
+.timelineWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: flex-end;
+}
+
+.checkmark {
+    font-family: arial;
+    -ms-transform: scaleX(-1) rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    margin-top: -5px;
+}

@@ -1,0 +1,33 @@
+.dragAndDropContainer {
+    display: flex;
+    border-style: dashed;
+    border-color: rgb(24, 176, 214);
+    border-width: 2px;
+    border-radius: 7px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.dragActivetrue {
+    background-color: rgb(233, 241, 251);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.openExplorer {
+    color: rgb(40, 144, 212);
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.hideInput {
+    visibility: hidden;
+}
+
+.disclaimer {
+    color: gray;
+}

@@ -1,0 +1,57 @@
+@mixin cross($size: 10px, $color: currentColor, $thickness: 1px) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+    width: $size;
+    height: $size;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: ($size - $thickness) / 2;
+        left: 0;
+        right: 0;
+        height: $thickness;
+        background: $color;
+        border-radius: $thickness;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    span {
+        display: block;
+    }
+
+}
+
+.cross-stand-alone {
+    @include cross(20px, #ff0000, 3px);
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.translateOption {
+    transition: all ease 300ms;
+    position: absolute;
+}
+
+.original {
+    left: 0px;
+}
+
+.translation {
+    left: 100px;
+}
+
+.arrows {
+    left: 50px;
+}
